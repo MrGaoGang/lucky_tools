@@ -25,8 +25,12 @@
   },
   "gitHead": "ef056cc27b64c6ab3efa6b9ded46add34603217e",
   "dependencies": {
+    "chalk": "^2.4.2",
     "commander": "^3.0.2",
+    "download-git-repo": "^2.0.0",
     "inquirer": "^7.0.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "ora": "^4.0.1",
+    "request": "^2.88.0"
   }
 }
