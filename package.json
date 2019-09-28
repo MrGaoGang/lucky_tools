@@ -1,0 +1,16 @@
+{
+  "name": "lucky_tools",
+  "private": true,
+  "scripts": {
+    "publish": "lerna publish -y"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "commander": "^3.0.2",
+    "inquirer": "^7.0.0",
+    "lerna": "^3.16.4",
+    "minimist": "^1.2.0"
+  }
+}
