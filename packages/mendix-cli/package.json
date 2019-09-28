@@ -7,6 +7,9 @@
     "widgets",
     "vue"
   ],
+  "scripts":{
+    "demo":"node bin/index create demo"
+  },
   "bin": {
     "mendix": "bin/index.js"
   },
@@ -17,9 +20,6 @@
     "type": "git",
     "url": "git+https://github.com/MrGaoGang/lucky_tools.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/MrGaoGang/lucky_tools/issues"
   },
@@ -28,6 +28,7 @@
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
     "download-git-repo": "^2.0.0",
+    "prettier": "^1.18.2",
     "inquirer": "^7.0.0",
     "minimist": "^1.2.0",
     "ora": "^4.0.1",

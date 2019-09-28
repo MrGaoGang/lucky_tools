@@ -33,19 +33,29 @@ function parse(projectName, repos) {
         }
 
         let gitUrl = `${ind.full_name}#${ind.default_branch}`,
-            defaultUrl = './',
-            projectUrl = `${defaultUrl}/${projectName}`,
+            projectUrl = `./${projectName}`,
             spinner = ora('\n Start building project, please wait...');
         spinner.start();
         download(gitUrl, projectUrl, (error) => {
-            spinner.stop();
             if (error) {
                 console.log('Template download failed ……')
                 console.log(error)
                 process.exit()
             }
-            console.log(chalk.green(`\n √ ${projectName} The project is generated!`))
-            console.log(`\n cd ${projectName} && npm install \n`)
+
+            spinner.stop();
+
+            // rename files
+            require("./rename.js")(projectName, function (error) {
+                if (error) {
+                    console.log(error)
+                } else {
+                    console.log(chalk.green(`\n √ ${projectName} The project is generated!`))
+                    console.log(`\n cd ${projectName} && npm install \n`)
+                }
+            });
+
+
         })
     })
 }
