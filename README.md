@@ -1,4 +1,4 @@
-## lucky_docs
+## lucky_tools
 
 This project mainly records the tools commonly used in daily work.
 
