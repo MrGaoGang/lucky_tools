@@ -1,14 +1,14 @@
 {
   "name": "mendix-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Use vue to create mendix widgets",
   "keywords": [
     "mendix",
     "widgets",
     "vue"
   ],
-  "scripts":{
-    "demo":"node bin/index create demo"
+  "scripts": {
+    "demo": "node bin/index create demo"
   },
   "bin": {
     "mendix": "bin/index.js"
@@ -28,10 +28,10 @@
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
     "download-git-repo": "^2.0.0",
-    "prettier": "^1.18.2",
     "inquirer": "^7.0.0",
     "minimist": "^1.2.0",
     "ora": "^4.0.1",
+    "prettier": "^1.18.2",
     "request": "^2.88.0"
   }
 }
