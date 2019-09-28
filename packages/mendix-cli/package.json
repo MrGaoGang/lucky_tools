@@ -1,6 +1,6 @@
 {
   "name": "mendix-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Use vue to create mendix widgets",
   "keywords": [
     "mendix",
@@ -14,10 +14,8 @@
   "homepage": "https://github.com/MrGaoGang/lucky_tools#readme",
   "license": "MIT",
   "main": "lib/mendix-cli.js",
-
-
   "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -28,8 +26,5 @@
   },
   "bugs": {
     "url": "https://github.com/MrGaoGang/lucky_tools/issues"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
