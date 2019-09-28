@@ -1,4 +1,3 @@
-// let minimist = require("minimist");
 let program = require("commander");
 program.version(require("../package.json").version).usage('<command> [options]');
 program.command("create <app-name>")
@@ -8,3 +7,4 @@ program.command("create <app-name>")
         console.log(name, cmd);
         console.log('====================================');
     });
+program.parse(process.argv);
