@@ -24,7 +24,7 @@ function renameMdFile(name, filePath) {
     let readMe = filePath + "README.md";
     let cnME = filePath + "ZH_README.md";
     if (fs.existsSync(readMe)) {
-        fs.writeFileSync(readMe, "\n## " + name + "\n> this is description! \n\ncreated by lucky_tools!")
+        fs.writeFileSync(readMe, "\n## " + name + "\n> this is description! \n\n how to use the widgets please see [mendix_vue_template](https://github.com/MrGaoGang/mendix_vue_template) \n\ncreated by lucky_tools!")
     }
 
     if (fs.existsSync(cnME)) {
