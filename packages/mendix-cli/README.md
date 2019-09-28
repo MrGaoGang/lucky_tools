@@ -1,11 +1,11 @@
 # `mendix-cli`
 
-> TODO: description
+> Use vue to create mendix widgets
 
 ## Usage
 
-```
-const mendixCli = require('mendix-cli');
+``` bash
+npm install mendix-cli -g
 
-// TODO: DEMONSTRATE API
+mendix create your-project
 ```
