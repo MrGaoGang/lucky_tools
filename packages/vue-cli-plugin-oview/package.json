@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-oview",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "oview移动端图表库cli插件",
   "main": "index.js",
   "scripts": {
