@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-oview",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "oview移动端图表库cli插件",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,6 @@
     "oview"
   ],
   "author": "mrgaogang",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "1d732773c4bfba8f48bc8ddcda867c0a71d7fe09"
 }
