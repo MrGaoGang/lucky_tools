@@ -11,7 +11,15 @@
     "cli",
     "oview"
   ],
-  "author": "mrgaogang",
+  "author": "mr.gao <gaogangwork@qq.com>",
+  "homepage": "https://github.com/MrGaoGang/lucky_tools#readme",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrGaoGang/lucky_tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrGaoGang/lucky_tools/issues"
+  },
   "gitHead": "1d732773c4bfba8f48bc8ddcda867c0a71d7fe09"
 }
