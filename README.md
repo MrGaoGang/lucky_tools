@@ -19,27 +19,31 @@ How to use it ,please see [mendix_vue_template](https://github.com/MrGaoGang/men
 **Widgets structure**
 
 ```
-├─.gitignore 
+├─.gitignore
 ├─README.md ------------------ // README
 ├─ZH_README.md --------------- // 中文说明文档
-├─babel.config.js 
+├─babel.config.js
 ├─build ---------------------- // Project Build Result
-│ ├─HelloWorld 
-│ │ ├─HelloWorld.xml 
-│ │ └─widget 
-│ │   ├─HelloWorld.js 
-│ │   └─template 
-│ │     └─HelloWorld.html 
-│ ├─package.xml 
-│ └─widget.mpk 
+│ ├─HelloWorld
+│ │ ├─HelloWorld.xml
+│ │ └─widget
+│ │   ├─HelloWorld.js
+│ │   └─template
+│ │     └─HelloWorld.html
+│ ├─package.xml
+│ └─widget.mpk
 ├─mendix --------------------- // Widgets demo
 ├─package.xml.js ------------- // Build tools
 ├─src ------------------------ // Project source code
 │ ├─HelloMendix.xml ---------- // Mendix widgets config files
-│ └─widget 
+│ └─widget
 │   ├─App.vue ---------------- // Vue file
 │   ├─HelloMendix.js --------- // Contact Vue file and Mendix widget config
 │   └─template --------------- // HTML template
-│     └─template.html 
+│     └─template.html
 └─webpack.config.js ---------- // webpack config
 ```
+
+### 2. vue-cli-plugin-oview
+
+[oview](https://github.com/MrGaoGang/oview) is a mobile chart library!
