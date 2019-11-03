@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-oview",
-  "version": "1.2.1",
+  "version": "1.2.0",
   "description": "oview移动端图表库cli插件",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,5 @@
   "bugs": {
     "url": "https://github.com/MrGaoGang/lucky_tools/issues"
   },
-  "gitHead": "1d732773c4bfba8f48bc8ddcda867c0a71d7fe09"
+  "gitHead": "28764b97ef58dbc8119d455144b12eeb3fb7b2f4"
 }
