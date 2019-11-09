@@ -1,5 +1,0 @@
-53 error Error: Command failed: git push --follow-tags --no-verify origin master
-53 error fatal: unable to access 'https://github.com/MrGaoGang/lucky_tools.git/': Failed to connect to github.com port 443: Operation timed out
-53 error
-53 error     at makeError (/Users/mr.gao/Documents/Github/Vue/lucky_tools/node_modules/execa/index.js:174:9)
-53 error     at Promise.all.then.arr (/Users/mr.gao/Documents/Github/Vue/lucky_tools/node_modules/execa/index.js:278:16)
