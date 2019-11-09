@@ -12,6 +12,11 @@ mendix create AppName
 
 ![](../../images/mendix-demo.png)
 
+
+## Template
+
+now it's support `iview`, `default` template, if you select `default` ,it will not have ui libary!
+
 How to use it ,please see [mendix_vue_template](https://github.com/MrGaoGang/mendix_vue_template)
 
 **Widgets structure**
