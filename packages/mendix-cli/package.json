@@ -1,6 +1,6 @@
 {
   "name": "mendix-cli",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Use vue to create mendix widgets",
   "keywords": [
     "mendix",
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/MrGaoGang/lucky_tools/issues"
   },
-  "gitHead": "eb07dfee0f57f2c1011f347c68e9491decff86f5",
+  "gitHead": "f7ae73ba9ec2bbde60e721332b6de035ee57eff4",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.2",
