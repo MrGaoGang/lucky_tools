@@ -3,20 +3,15 @@ const inquirer = require('inquirer')
 const chalk = require('chalk')
 const request = require('request')
 const download = require('download-git-repo')
+const TEMPLATE_URL = 'https://api.github.com/repos/mrgaogang/mendix_vue_template';
 
-function parse(projectName, repos) {
-
-
-    let tplNames = [];
-    if (Array.isArray(repos)) {
-        repos.forEach(repo => {
-            tplNames.push(repo.name);
-        })
-    } else {
-        tplNames.push(repos.name);
-    }
-
-
+/**
+ * 
+ * @param {*} projectName 
+ * @param {*} repos 
+ * @param {*} tplNames 
+ */
+function cloneGit(projectName, repos, tplNames) {
     let promptList = [{
         type: 'list',
         message: 'Please select templates',
@@ -26,13 +21,9 @@ function parse(projectName, repos) {
     inquirer.prompt(promptList).then(answers => {
 
         let ind = repos;
-        if (Array.isArray(repos)) {
-            ind = repos.find(function (ele) {
-                return answers.tplName == ele.name;
-            });
-        }
 
-        let gitUrl = `${ind.full_name}#${ind.default_branch}`,
+
+        let gitUrl = `${ind.full_name}#${answers.tplName==='default'?'master':answers.tplName}`,
             projectUrl = `./${projectName}`,
             spinner = ora('\n Start building project, please wait...');
         spinner.start();
@@ -59,9 +50,41 @@ function parse(projectName, repos) {
         })
     })
 }
+
+function parse(projectName, repos) {
+
+    request({
+        url: TEMPLATE_URL + "/branches",
+        headers: {
+            'User-Agent': 'mendix-cli'
+        }
+    }, function (error, res, body) {
+        if (error) {
+            console.log(chalk.red('Query branches error, please add issue!'))
+            process.exit();
+        }
+
+        let result = JSON.parse(body);
+        let tplNames = [];
+
+        result.forEach(ele => {
+            if (ele.name === "master") {
+                tplNames.push("default");
+            } else {
+                tplNames.push(ele.name);
+            }
+        });
+
+        cloneGit(projectName, repos, tplNames);
+
+
+    });
+
+
+}
 module.exports = (name) => {
     request({
-        url: 'https://api.github.com/repos/mrgaogang/mendix_vue_template',
+        url: TEMPLATE_URL,
         headers: {
             'User-Agent': 'mendix-cli'
         }
