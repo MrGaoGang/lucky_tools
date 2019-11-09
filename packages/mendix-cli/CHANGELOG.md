@@ -8,21 +8,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* 新增vue开发Mendix组件iview模板 ([cbfbcfe](https://github.com/MrGaoGang/lucky_tools/commit/cbfbcfe))
-
-
-
-
-
-# [1.1.0](https://github.com/MrGaoGang/lucky_tools/compare/mendix-cli@1.0.5...mendix-cli@1.1.0) (2019-11-09)
-
-
-### Features
-
-* 新增vue开发Mendix组件iview模板 ([0fd126d](https://github.com/MrGaoGang/lucky_tools/commit/0fd126d))
-
-
-
 
 
 ## [1.0.5](https://github.com/MrGaoGang/lucky_tools/compare/mendix-cli@1.0.4...mendix-cli@1.0.5) (2019-09-28)
