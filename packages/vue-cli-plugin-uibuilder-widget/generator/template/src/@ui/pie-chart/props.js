@@ -1,2 +1,2 @@
-import Props from "./pie-chart-prop.vue";
+import Props from "./<%=widgetName%>-prop.vue";
 export default Props;

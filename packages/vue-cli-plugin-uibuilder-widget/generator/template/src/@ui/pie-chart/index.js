@@ -1,2 +1,2 @@
-import Widget from "./pie-chart.vue";
+import Widget from "./<%=widgetName%>.vue";
 export default Widget;
