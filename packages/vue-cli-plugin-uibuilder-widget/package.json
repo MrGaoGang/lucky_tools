@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-uibuilder-widget",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "创建UI Builder组件 ",
   "keywords": [
     "vue",
@@ -12,7 +12,6 @@
   "homepage": "https://github.com/MrGaoGang/ui-designer",
   "license": "MIT",
   "main": "index.js",
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MrGaoGang/lucky_tools.git"

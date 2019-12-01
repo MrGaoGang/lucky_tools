@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/MrGaoGang/lucky_tools/compare/mendix-cli@1.0.5...mendix-cli@1.3.0) (2019-12-01)
+
+
+### Features
+
+* 新增vue开发Mendix组件iview模板 ([bc81557](https://github.com/MrGaoGang/lucky_tools/commit/bc81557))
+* 新增vue开发Mendix组件iview模板 ([cbfbcfe](https://github.com/MrGaoGang/lucky_tools/commit/cbfbcfe))
+* 新增vue开发Mendix组件iview模板 ([0fd126d](https://github.com/MrGaoGang/lucky_tools/commit/0fd126d))
+
+
+
+
+
 # [1.2.0](https://github.com/MrGaoGang/lucky_tools/compare/mendix-cli@1.1.0...mendix-cli@1.2.0) (2019-11-09)
 
 
