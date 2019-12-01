@@ -1,0 +1,26 @@
+{
+  "name": "vue-cli-plugin-uibuilder-widget",
+  "version": "1.0.0",
+  "description": "创建UI Builder组件 ",
+  "keywords": [
+    "vue",
+    "ui",
+    "builder",
+    "widgets"
+  ],
+  "author": "mr.gao <gaogangwork@qq.com>",
+  "homepage": "https://github.com/MrGaoGang/ui-designer",
+  "license": "MIT",
+  "main": "index.js",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrGaoGang/lucky_tools.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/MrGaoGang/lucky_tools/issues"
+  }
+}
