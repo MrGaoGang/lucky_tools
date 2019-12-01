@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/MrGaoGang/lucky_tools/compare/vue-cli-plugin-uibuilder-widget@1.1.0...vue-cli-plugin-uibuilder-widget@1.1.1) (2019-12-01)
+
+
+### Bug Fixes
+
+* 新增ui 组件构建插件 ([20f1eae](https://github.com/MrGaoGang/lucky_tools/commit/20f1eae))
+
+
+
+
+
 # 1.1.0 (2019-12-01)
 
 
