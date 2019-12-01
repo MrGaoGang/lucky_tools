@@ -5,7 +5,7 @@
 ## Usage
 
 ```
-const pieChart = require('<%=widgetName=>');
+const pieChart = require('<%=widgetName%=>');
 
 // TODO: DEMONSTRATE API
 ```
