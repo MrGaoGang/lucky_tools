@@ -1,6 +1,6 @@
 <template>
-  <div>Hello, widget
-    <img src="./src/assets/go_back.png">
+  <div>Hello,Widgets
+    <img src="./src/assets/logo.png">
   </div>
 </template>
 
