@@ -1,0 +1,121 @@
+{
+  "customPresetColors": [
+    "1abc9c",
+    "2ecc71",
+    "3498db",
+    "9b59b6",
+    "34495e",
+    "16a085",
+    "27ae60",
+    "8e44ad",
+    "2c3e50",
+    "f1c40f",
+    "e67e22",
+    "e74c3c",
+    "ecf0f1",
+    "95a5a6",
+    "f39c12",
+    "c0392b",
+    "bdc3c7",
+    "7f8c8d"
+  ],
+  "customFonts": [
+    "Segoe UI",
+    "Segoe Script",
+    "Open Sans"
+  ],
+  "customColorSchemes": [
+    [
+      {},
+      {
+        "fill": "#1abc9c",
+        "stroke": "none",
+        "font": "#ffffff"
+      },
+      {
+        "fill": "#2ecc71",
+        "stroke": "none",
+        "font": "#ffffff"
+      },
+      {
+        "fill": "#9b59b6",
+        "stroke": "none",
+        "font": "#ffffff"
+      },
+      {
+        "fill": "#3498db",
+        "stroke": "none",
+        "font": "#ffffff"
+      },
+      {
+        "fill": "#e67e22",
+        "stroke": "none",
+        "font": "#ffffff"
+      },
+      {
+        "fill": "#e74c3c",
+        "stroke": "none",
+        "font": "#ffffff"
+      },
+      {
+        "fill": "#ff6b6b",
+        "stroke": "none",
+        "font": "#ffffff"
+      }
+    ],
+    [
+      {},
+      {
+        "fill": "none",
+        "stroke": "#1abc9c",
+        "font": "#1abc9c"
+      },
+      {
+        "fill": "none",
+        "stroke": "#2ecc71",
+        "font": "#2ecc71"
+      },
+      {
+        "fill": "none",
+        "stroke": "#3498db",
+        "font": "#3498db"
+      },
+      {
+        "fill": "none",
+        "stroke": "#9b59b6",
+        "font": "#9b59b6"
+      },
+      {
+        "fill": "none",
+        "stroke": "#e74c3c",
+        "font": "#e74c3c"
+      },
+      {
+        "fill": "none",
+        "stroke": "#f39c12",
+        "font": "#f39c12"
+      }
+    ]
+  ],
+  "defaultVertexStyle": {
+    "fontFamily": "Segoe UI",
+    "fontSize": "12",
+    "strokeWidth": "1",
+    "arcSize": "10",
+    "absoluteArcSize": "1",
+    "rounded": "1",
+    "shadow": "0",
+    "comic": "0"
+  },
+  "defaultEdgeStyle": {
+    "fontFamily": "Segoe UI",
+    "fontSize": "15",
+    "strokeWidth": "1",
+    "arcSize": "10",
+    "absoluteArcSize": "1",
+    "rounded": "1",
+    "shadow": "0",
+    "comic": "0"
+  },
+  "fontCss": "@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i')"
+}
