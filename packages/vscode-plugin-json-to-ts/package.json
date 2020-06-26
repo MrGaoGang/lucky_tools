@@ -1,0 +1,102 @@
+{
+  "name": "json-2-ts",
+  "displayName": "json转ts",
+  "description": "Convert JSON object to typescript interfaces",
+  "version": "1.0.3",
+  "publisher": "mrgaogang",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.38.0"
+  },
+  "keywords": [
+    "types",
+    "util",
+    "typescript",
+    "json"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:jsonToTs.fromSelection",
+    "onCommand:jsonToTs.fromClipboard",
+    "onCommand:jsonToTs.fromJSONFile"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrgaogang/vscode-plugin-json-to-ts.git"
+  },
+  "author": "https://github.com/mrgaogang",
+  "main": "./lib/index.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jsonToTs.fromSelection",
+        "title": "选择json字符串转换ts",
+        "category": "Cat Coding"
+      },
+      {
+        "command": "jsonToTs.fromClipboard",
+        "title": "剪切板转换ts",
+        "category": "Cat Coding"
+      },
+      {
+        "command": "jsonToTs.fromJSONFile",
+        "title": "json文件转换成ts",
+        "category": "Cat Coding"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "jsonToTs.fromClipboard",
+        "key": "ctrl+alt+C"
+      },
+      {
+        "command": "jsonToTs.fromSelection",
+        "key": "ctrl+alt+S"
+      },
+      {
+        "command": "jsonToTs.fromJSONFile",
+        "key": "ctrl+alt+F"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorFocus",
+          "command": "jsonToTs.fromSelection",
+          "group": "Cat Coding"
+        },
+        {
+          "when": "editorFocus",
+          "command": "jsonToTs.fromClipboard",
+          "group": "Cat Coding"
+        },
+        {
+          "when": "editorFocus",
+          "command": "jsonToTs.fromJSONFile",
+          "group": "Cat Coding"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "tslint -p ./",
+    "watch": "tsc -w -p ./",
+    "build": "npm run compile && vsce package"
+  },
+  "dependencies": {
+    "copy-paste": "^1.3.0",
+    "json-to-ts": "^1.7.0",
+    "@types/lodash": "^4.14.155"
+  },
+  "devDependencies": {
+    "@types/copy-paste": "^1.1.30",
+    "@types/node": "^10.5.2",
+    "@types/vscode": "^1.38.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.5.1"
+  }
+}
