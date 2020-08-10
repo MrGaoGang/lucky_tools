@@ -50,3 +50,6 @@ How to use it ,please see [mendix_vue_template](https://github.com/MrGaoGang/men
 
 [oview](https://github.com/MrGaoGang/oview) is a mobile chart library!
 
+### 5. vscode-react-typescript-snippet
+
+This extension contains code snippets for React with Typescript.
