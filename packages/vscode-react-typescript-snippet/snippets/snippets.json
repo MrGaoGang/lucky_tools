@@ -148,7 +148,7 @@
 		],
 		"description": "Create a default-exported React Pure Function Component."
 	},
-	"React Stateless Functional Component": {
+	"React Functional Component": {
 		"prefix": "tsrfc",
 		"body": [
 			"import * as React from 'react';",
@@ -157,13 +157,13 @@
 			"}",
 			"",
 			"const ${1:}: React.FC<I${1:}Props> = (props) => {",
-			"  return $0;",
+			"  return <div>${0}</div>;",
 			"};",
 			"",
 			"export default ${1:};",
 			""
 		],
-		"description": "Create a React Stateless Functional Component."
+		"description": "Create a React Functional Component."
 	},
 	"constructor": {
 		"prefix": "conc",
