@@ -1,6 +1,6 @@
 {
   "name": "vscode-react-typescript-snippet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Recent Code snippets for react in typescript",
   "displayName": "Typescript React code snippets",
   "publisher": "mrgaogang",
@@ -9,14 +9,14 @@
     "theme": "light"
   },
   "scripts": {
-    "build":"vsce package"
+    "build": "vsce package"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrgaogang/lucky_tools.git"
   },
   "engines": {
-    "vscode": "0.10.x"
+    "vscode": "^1.38.0"
   },
   "categories": [
     "Snippets"
@@ -27,7 +27,7 @@
     "typescript",
     "vscode-extension"
   ],
-  "author": "infeng",
+  "author": "mrgaogang",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mrgaogang/lucky_tools/issues"

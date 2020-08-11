@@ -273,7 +273,7 @@
 		"description": "Create a method"
 	},
 	"React redux container": {
-		"prefix": "tscntr",
+		"prefix": "tscredux",
 		"body": [
 			"import * as React from 'react';",
 			"import { connect } from 'react-redux'",
@@ -300,6 +300,29 @@
 			""
 		],
 		"description": "React Redux container"
+	},
+	"React redux function container": {
+		"prefix": "tsfredux",
+		"body": [
+			"import * as React from 'react';",
+			"import { connect } from 'react-redux'",
+			"",
+			"interface I${1:App}Props {$2",
+			"}",
+			"",
+			"const ${1:}: React.FC<I${1:}Props> = (props) => {",
+			"  return <div>${0}</div>;",
+			"};",
+			"",
+			"const mapState2Props = state => {",
+			"  return {",
+			"  };",
+			"}",
+			"",
+			"export default connect(mapState2Props)(${1:});",
+			""
+		],
+		"description": "React Redux function container"
 	},
 	"import": {
 		"prefix": "imt",
