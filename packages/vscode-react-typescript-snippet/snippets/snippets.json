@@ -277,6 +277,7 @@
 		"body": [
 			"import * as React from 'react';",
 			"import { connect } from 'react-redux'",
+			"import { Dispatch } from 'redux'",
 			"",
 			"export interface I${1:App}Props {",
 			"}",
@@ -295,8 +296,12 @@
 			"  return {",
 			"  };",
 			"}",
+			"const mapDispatchToProps  = (dispatch : Dispatch){",
+			"  return {",
+			"  };",
+			"}",
 			"",
-			"export default connect(mapState2Props)(${1:});",
+			"export default connect(mapState2Props,mapDispatchToProps)(${1:});",
 			""
 		],
 		"description": "React Redux container"
@@ -306,6 +311,7 @@
 		"body": [
 			"import * as React from 'react';",
 			"import { connect } from 'react-redux'",
+			"import { Dispatch } from 'redux'",
 			"",
 			"interface I${1:App}Props {$2",
 			"}",
@@ -314,12 +320,16 @@
 			"  return <div>${0}</div>;",
 			"};",
 			"",
-			"const mapState2Props = state => {",
+			"const mapStateToProps = state => {",
+			"  return {",
+			"  };",
+			"}",
+			"const mapDispatchToProps  = (dispatch : Dispatch){",
 			"  return {",
 			"  };",
 			"}",
 			"",
-			"export default connect(mapState2Props)(${1:});",
+			"export default connect(mapStateToProps,mapDispatchToProps)(${1:});",
 			""
 		],
 		"description": "React Redux function container"
