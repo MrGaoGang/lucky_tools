@@ -1,8 +1,8 @@
 {
   "name": "vscode-react-typescript-snippet",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Recent Code snippets for react in typescript",
-  "displayName": "Typescript React code snippets",
+  "displayName": "React code snippets Typescript",
   "publisher": "mrgaogang",
   "icon": "images/react.png",
   "galleryBanner": {
