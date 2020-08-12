@@ -27,7 +27,7 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | Trigger  | Content |
 | -------: | ------- |
 | `tsrcc→` | `class component skeleton` |
-| `tsrcfull→` | `class component skeleton with Props, State, and constructor` |
+| `tsrcstate` | `class component skeleton with Props, State, and constructor` |
 | `tsrcjc→`| `class component skeleton without import and default export lines` |
 | `tsrpcc→`| `class purecomponent skeleton` |
 | `tsrpcjc→` | `class purecomponent without import and default export lines` |
@@ -50,6 +50,76 @@ Below is a list of all available snippets and the triggers of each one. The **�
 | `met→`   | `simple method` |
 | `tscredux→` | `react redux container skeleton` |
 | `imt`    |  `create a import` |
+
+
+**tsrcredux**
+
+```tsx
+import * as React from 'react';
+import { connect } from 'react-redux'
+import { Dispatch } from 'redux'
+// you can define global interface ConnectState in @/state/connect.d
+import { ConnectState } from '@/state/connect.d';
+
+export interface IAppProps {
+}
+
+export type ReduxType = ReturnType<typeof mapStateToProps> & ReturnType<typeof mapDispatchToProps> & IAppProps;
+
+class App extends React.Component<ReduxType> {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = (state : ConnectState) => {
+  return {
+  };
+}
+const mapDispatchToProps  = (dispatch : Dispatch) => {
+  return {
+  };
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);
+
+
+```
+
+**tsrfredux**
+
+```tsx
+import * as React from 'react';
+import { connect } from 'react-redux'
+import { Dispatch } from 'redux'
+// you can define global interface ConnectState in @/state/connect.d
+import { ConnectState } from '@/state/connect.d';
+
+export interface IAppProps {
+}
+
+export type ReduxType = ReturnType<typeof mapStateToProps> & ReturnType<typeof mapDispatchToProps> & IAppProps;
+
+const App: React.FC<ReduxType> = (props) => {
+  return <div></div>;
+};
+
+const mapStateToProps = (state : ConnectState) => {
+  return {
+  };
+}
+const mapDispatchToProps  = (dispatch : Dispatch) => {
+  return {
+  };
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(App);
+
+```
 
 ## License
 
