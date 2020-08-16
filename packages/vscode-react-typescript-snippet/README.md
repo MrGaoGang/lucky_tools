@@ -22,7 +22,7 @@
 |      `tsrpfc` | `react 函数式组件`                           |
 |     `tsdrpfc` | `拥有default export的函数式react组件`        |
 |       `tsrfc` | `无状态的函数式react组件`             |
-|       `conc→` | `react constructor 方法                      |
+|       `conc→` | `react constructor 方法`                      |
 |        `cwm→` | `componentWillMount 方法`                    |
 |        `ren→` | `render 方法`                                |
 |        `cdm→` | `componentDidMount 方法`                     |
