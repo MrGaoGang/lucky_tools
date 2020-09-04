@@ -15,3 +15,8 @@
 3. 将json文件转换成interface   (windows: `ctrl+alt+F ` , Mac : `^+⌥+F`)
 
 ![](https://user-gold-cdn.xitu.io/2020/6/10/1729d11313973504?w=360&h=240&f=gif&s=163609)
+
+
+## 注意点
+
+默认插件会将json的key变成驼峰。
