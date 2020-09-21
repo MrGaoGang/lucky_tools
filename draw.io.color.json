@@ -75,7 +75,11 @@
         }
       ],
       [
-        {},
+        {
+            "fill": "none",
+            "stroke": "#D85960",
+            "font": "#D85960"
+        },
         {
           "fill": "none",
           "stroke": "#1abc9c",
