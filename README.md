@@ -8,6 +8,7 @@
   - [3. mendix-cli](#3-mendix-cli)
   - [4. vue-cli-plugin-oview](#4-vue-cli-plugin-oview)
   - [5. vscode-react-typescript-snippet](#5-vscode-react-typescript-snippet)
+  - [6. react-native-file-hash-plugin](https://github.com/MrGaoGang/react-native-file-hash-plugin)
 
 此工程主要记录一些日常工作中常用的 vscode 插件。
 
@@ -63,3 +64,8 @@ mendix create your-project
 `vue` 移动图表库 `oview` 的 `vue-cli` 插件。
 
 > [oview](https://github.com/MrGaoGang/oview) is a mobile chart library!
+
+### 5. react-native-file-hash-plugin
+[react-native-file-hash-plugin](https://github.com/MrGaoGang/react-native-file-hash-plugin)  create file hash in react-native!
+
+
