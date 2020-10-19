@@ -9,6 +9,7 @@
   - [3. mendix-cli](#3-mendix-cli)
   - [4. vue-cli-plugin-oview](#4-vue-cli-plugin-oview)
   - [5. vscode-react-typescript-snippet](#5-vscode-react-typescript-snippet)
+  - [6. react-native-file-hash-plugin](https://github.com/MrGaoGang/react-native-file-hash-plugin)
 
 
 This project mainly records the tools commonly used in daily work.
