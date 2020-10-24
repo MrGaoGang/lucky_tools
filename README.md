@@ -3,11 +3,11 @@
 [English](./en_README.md)
 
 - [lucky_tools](#lucky_tools)
-  - [1. vscode-plugin-json-to-ts](#1-vscode-plugin-json-to-ts)
-  - [2. vue-cli-plugin-uibuilder-widget](#2-vue-cli-plugin-uibuilder-widget)
-  - [3. mendix-cli](#3-mendix-cli)
-  - [4. vue-cli-plugin-oview](#4-vue-cli-plugin-oview)
-  - [5. vscode-react-typescript-snippet](#5-vscode-react-typescript-snippet)
+  - [1. vscode-plugin-json-to-ts](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vscode-plugin-json-to-ts)
+  - [2. vue-cli-plugin-uibuilder-widget](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vue-cli-plugin-uibuilder-widget)
+  - [3. mendix-cli](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/mendix-cli)
+  - [4. vue-cli-plugin-oview](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vue-cli-plugin-oview)
+  - [5. vscode-react-typescript-snippet](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vscode-react-typescript-snippet)
   - [6. react-native-file-hash-plugin](https://github.com/MrGaoGang/react-native-file-hash-plugin)
 
 此工程主要记录一些日常工作中常用的 vscode 插件。
