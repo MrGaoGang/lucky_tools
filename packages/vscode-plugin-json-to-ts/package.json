@@ -2,7 +2,7 @@
   "name": "json-2-ts",
   "displayName": "json转ts",
   "description": "Convert JSON object to typescript interfaces",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "mrgaogang",
   "icon": "icon.png",
   "engines": {
