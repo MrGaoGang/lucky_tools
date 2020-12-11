@@ -24,7 +24,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrgaogang/vscode-plugin-json-to-ts.git"
+    "url": "https://github.com/MrGaoGang/lucky_tools/tree/master/packages/vscode-plugin-json-to-ts"
   },
   "author": "https://github.com/mrgaogang",
   "main": "./lib/index.js",
