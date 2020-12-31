@@ -4,11 +4,11 @@
 
 - [lucky_tools](#lucky_tools)
   - [1. vscode-plugin-json-to-ts](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vscode-plugin-json-to-ts)
-  - [2. vue-cli-plugin-uibuilder-widget](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vue-cli-plugin-uibuilder-widget)
-  - [3. mendix-cli](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/mendix-cli)
-  - [4. vue-cli-plugin-oview](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vue-cli-plugin-oview)
-  - [5. vscode-react-typescript-snippet](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vscode-react-typescript-snippet)
-  - [6. react-native-file-hash-plugin](https://github.com/MrGaoGang/react-native-file-hash-plugin)
+  - [2. vscode-react-typescript-snippet](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vscode-react-typescript-snippet)
+  - [3. react-native-file-hash-plugin](https://github.com/MrGaoGang/react-native-file-hash-plugin)
+  - [4. mendix-cli](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/mendix-cli)
+  - [5. vue-cli-plugin-oview](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vue-cli-plugin-oview)
+  - [6. vue-cli-plugin-uibuilder-widget](https://github.com/MrGaoGang/lucky_tools/blob/master/packages/vue-cli-plugin-uibuilder-widget)
 
 此工程主要记录一些日常工作中常用的 vscode 插件。
 
@@ -66,6 +66,5 @@ mendix create your-project
 > [oview](https://github.com/MrGaoGang/oview) is a mobile chart library!
 
 ### 5. react-native-file-hash-plugin
-[react-native-file-hash-plugin](https://github.com/MrGaoGang/react-native-file-hash-plugin)  create file hash in react-native!
 
-
+[react-native-file-hash-plugin](https://github.com/MrGaoGang/react-native-file-hash-plugin) create file hash in react-native!

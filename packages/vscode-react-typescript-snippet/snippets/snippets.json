@@ -1,6 +1,6 @@
 {
-  "React Component": {
-    "prefix": "tsrcc",
+  "Luckly React Component": {
+    "prefix": "tslrcc",
     "body": [
       "import * as React from 'react';",
       "",
@@ -20,8 +20,8 @@
     ],
     "description": "Lucky tools React Component with typescript."
   },
-  "React Component - Full": {
-    "prefix": "tsrcstate",
+  "Luckly React Component - Full": {
+    "prefix": "tslrcstate",
     "body": [
       "import * as React from 'react';",
       "",
@@ -52,8 +52,8 @@
     "description": "Lucky tools Create a stateful React Component with typescript with Props, State, and a constructor."
   },
 
-  "React PureComponent": {
-    "prefix": "tsrpcc",
+  "Luckly React PureComponent": {
+    "prefix": "tslrpcc",
     "body": [
       "import * as React from 'react';",
       "",
@@ -74,8 +74,8 @@
     "description": "Lucky tools Create a React PureComponent."
   },
 
-  "React Pure Function Component": {
-    "prefix": "tsrpfc",
+  "Luckly React Pure Function Component": {
+    "prefix": "tslrpfc",
     "body": [
       "import * as React from 'react';",
       "",
@@ -93,8 +93,8 @@
     ],
     "description": "Lucky tools Create a React Pure Function Component."
   },
-  "Export Default React Pure Function Component": {
-    "prefix": "tsdrpfc",
+  "Luckly Export Default React Pure Function Component": {
+    "prefix": "tsldrpfc",
     "body": [
       "import * as React from 'react';",
       "",
@@ -112,8 +112,8 @@
     ],
     "description": "Lucky tools Create a default-exported React Pure Function Component."
   },
-  "React Functional Component": {
-    "prefix": "tsrfc",
+  "Luckly React Functional Component": {
+    "prefix": "tslrfc",
     "body": [
       "import * as React from 'react';",
       "",
@@ -129,80 +129,80 @@
     ],
     "description": "Lucky tools Create a React Functional Component."
   },
-  "constructor": {
-    "prefix": "conc",
-    "body": ["constructor(props) {", "  super(props);", "  ${1:}", "}"],
+  "Luckly constructor": {
+    "prefix": "tslconc",
+    "body": ["public constructor(props) {", "  super(props);", "  ${1:}", "}"],
     "description": "Lucky tools  Add a constructor in class."
   },
-  "componentWillMount": {
-    "prefix": "cwm",
-    "body": ["componentWillMount() {", "  ${1:}", "}"],
+  "Luckly componentWillMount": {
+    "prefix": "tslcwm",
+    "body": ["public componentWillMount(): void {", "  ${1:}", "}"],
     "description": "Lucky tools  Invoked immediately before mounting occurs. It is called before render()."
   },
-  "render": {
-    "prefix": "ren",
-    "body": ["render() {", "  return (", "    ${1:}", "  );", "}"],
+  "Luckly render": {
+    "prefix": "tslren",
+    "body": ["public render() {", "  return (", "    ${1:}", "  );", "}"],
     "description": "Lucky tools  When called, it should examine this.props and this.state and return a single React element."
   },
-  "componentDidMount": {
-    "prefix": "cdm",
-    "body": ["componentDidMount() {", "  ${1:}", "}"],
+  "Luckly componentDidMount": {
+    "prefix": "tslcdm",
+    "body": ["public componentDidMount(): void{", "  ${1:}", "}"],
     "description": "Lucky tools  Invoked immediately after a component is mounted."
   },
-  "componentWillReceiveProps": {
-    "prefix": "cwrp",
-    "body": ["componentWillReceiveProps(nextProps: ${1:}) {", "  ${2:}", "}"],
+  "Luckly componentWillReceiveProps": {
+    "prefix": "tslcwrp",
+    "body": ["public componentWillReceiveProps(nextProps: ${1:}): void {", "  ${2:}", "}"],
     "description": "Lucky tools  Invoked before a mounted component receives new props."
   },
-  "shouldComponentUpdate": {
-    "prefix": "scu",
+  "Luckly shouldComponentUpdate": {
+    "prefix": "tslscu",
     "body": [
-      "shouldComponentUpdate(nextProps: ${1:}, nextState) {",
+      "public shouldComponentUpdate(nextProps: ${1:}, nextState): void {",
       "  ${2:}",
       "}"
     ],
     "description": "Lucky tools  Invoked before rendering when new props or state are being received."
   },
-  "componentWillUpdate": {
-    "prefix": "cwu",
+  "Luckly componentWillUpdate": {
+    "prefix": "tslcwu",
     "body": [
-      "componentWillUpdate(nextProps: ${1:}, nextState) {",
+      "public componentWillUpdate(nextProps: ${1:}, nextState): void {",
       "  ${2:}",
       "}"
     ],
     "description": "Lucky tools  Invoked immediately before rendering when new props or state are being received."
   },
-  "componentDidUpdate": {
-    "prefix": "cdu",
+  "Luckly componentDidUpdate": {
+    "prefix": "tslcdu",
     "body": [
-      "componentDidUpdate(prevProps: ${1:}, prevState) {",
+      "public componentDidUpdate(prevProps: ${1:}, prevState): void {",
       "  ${2:}",
       "}"
     ],
     "description": "Lucky tools  Invoked immediately after updating occurs. This method is not called for the initial render"
   },
-  "componentWillUnmount": {
-    "prefix": "cwum",
-    "body": ["componentWillUnmount() {", "  ${1:}", "}"],
+  "Luckly componentWillUnmount": {
+    "prefix": "tslcwum",
+    "body": ["public componentWillUnmount(): void {", "  ${1:}", "}"],
     "description": "Lucky tools Invoked immediately before a component is unmounted and destroyed"
   },
-  "componentSetState": {
-    "prefix": "sst",
+  "Luckly componentSetState": {
+    "prefix": "tslsst",
     "body": ["this.setState(${1:});"],
     "description": "Lucky tools Performs a shallow merge of nextState into current state"
   },
-  "bind method": {
-    "prefix": "bnd",
+  "Luckly bind method": {
+    "prefix": "tslbnd",
     "body": ["this.${1:} = this.${1:}.bind(this);"],
     "description": "Lucky tools  bind this in method"
   },
-  "method": {
-    "prefix": "met",
+  "Luckly method": {
+    "prefix": "tslmet",
     "body": ["${1:methodName} = (${2:e}) => {", "  ${3:}", "}"],
     "description": "Lucky tools  Create a method"
   },
-  "React redux container": {
-    "prefix": "tsrcredux",
+  "Luckly React redux container": {
+    "prefix": "tslrcredux",
     "body": [
       "import * as React from 'react';",
       "import { connect } from 'react-redux'",
@@ -239,13 +239,12 @@
     ],
     "description": "Lucky tools React Redux container"
   },
-  "React redux function container": {
-    "prefix": "tsrfredux",
+  "Luckly React redux function container": {
+    "prefix": "tslrfredux",
     "body": [
       "import * as React from 'react';",
       "import { connect } from 'react-redux'",
       "import { Dispatch } from 'redux'",
-      "// you can define global interface ConnectState in @/state/connect.d",
       "import { ConnectState } from '@/state/connect.d';",
       "",
       "export interface I${1:App}Props {$2",
@@ -271,8 +270,8 @@
     ],
     "description": "Lucky tools React Redux function container"
   },
-  "import": {
-    "prefix": "imt",
+  "Luckly import": {
+    "prefix": "tslimt",
     "body": ["import { $2 } from '$1';"],
     "description": "Create a import"
   }
