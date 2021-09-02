@@ -1,4 +1,23 @@
 {
+  "Luckly Vue": {
+    "prefix": "tsvue",
+    "body": [
+      " <template>",
+      "</template>",
+      "<script lang=\"ts\">",
+
+      "import { Component, Vue } from 'vue-property-decorator';",
+      "@Component({ name: '${1:}' })",
+      "export default class extends Vue {",
+      "}",
+      "</script>",
+
+      "<style lang=\"less\">",
+
+      "</style>"
+    ],
+    "description": "Lucky tools Vue Component with typescript."
+  },
   "Luckly React Component": {
     "prefix": "tslrcc",
     "body": [
@@ -151,7 +170,11 @@
   },
   "Luckly componentWillReceiveProps": {
     "prefix": "tslcwrp",
-    "body": ["public componentWillReceiveProps(nextProps: ${1:}): void {", "  ${2:}", "}"],
+    "body": [
+      "public componentWillReceiveProps(nextProps: ${1:}): void {",
+      "  ${2:}",
+      "}"
+    ],
     "description": "Lucky tools  Invoked before a mounted component receives new props."
   },
   "Luckly shouldComponentUpdate": {
