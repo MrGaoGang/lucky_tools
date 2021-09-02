@@ -1,0 +1,22 @@
+{
+    "Luckly Vue": {
+      "prefix": "vuets",
+      "body": [
+        " <template>",
+        "</template>",
+        "<script lang=\"ts\">",
+  
+        "import { Component, Vue } from 'vue-property-decorator';",
+        "@Component({ name: '${1:}' })",
+        "export default class extends Vue {",
+        "}",
+        "</script>",
+  
+        "<style lang=\"less\">",
+  
+        "</style>"
+      ],
+      "description": "Lucky tools Vue Component with typescript."
+    }
+  }
+  
