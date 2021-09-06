@@ -1,22 +1,69 @@
 {
-    "Luckly Vue": {
-      "prefix": "vuets",
-      "body": [
-        " <template>",
-        "</template>",
-        "<script lang=\"ts\">",
-  
-        "import { Component, Vue } from 'vue-property-decorator';",
-        "@Component({ name: '${1:}' })",
-        "export default class extends Vue {",
-        "}",
-        "</script>",
-  
-        "<style lang=\"less\">",
-  
-        "</style>"
-      ],
-      "description": "Lucky tools Vue Component with typescript."
-    }
+  "Luckly Vue": {
+    "prefix": "vue@ts",
+    "body": [
+      " <template>",
+      "</template>",
+      "<script lang=\"ts\">",
+
+      "import { Component, Vue } from 'vue-property-decorator';",
+      "@Component({ name: '${1:}' })",
+      "export default class extends Vue {",
+      "}",
+      "</script>",
+
+      "<style lang=\"less\">",
+
+      "</style>"
+    ],
+    "description": "Lucky tools Vue Component with typescript."
+  },
+  "Luckly Vue2 TS": {
+    "prefix": "vue2ts",
+    "body": [
+      " <template>",
+      "</template>",
+      "<script lang=\"ts\">",
+
+      "import { defineComponent, PropType } from '@vue/composition-api';",
+      "export default defineComponent({",
+      " name: '${1:}',",
+      " setup(props) {",
+      " return {",
+
+      " };",
+      " },",
+      "});",
+      "</script>",
+
+      "<style lang=\"less\">",
+
+      "</style>"
+    ],
+    "description": "Lucky tools Vue Component with typescript."
+  },
+  "Luckly Vue3 TS": {
+    "prefix": "vue3ts",
+    "body": [
+      " <template>",
+      "</template>",
+      "<script lang=\"ts\">",
+
+      "import { defineComponent, PropType } from 'vue';",
+      "export default defineComponent({",
+      " name: '${1:}',",
+      " setup(props) {",
+      " return {",
+
+      " };",
+      " },",
+      "});",
+      "</script>",
+
+      "<style lang=\"less\">",
+
+      "</style>"
+    ],
+    "description": "Lucky tools Vue Component with typescript."
   }
-  
+}
