@@ -3,7 +3,6 @@ import * as os from "os";
 import * as copyPaste from "copy-paste";
 import _ from "lodash";
 import fs from 'fs'
-const humps = require('humps');
 
 export function getClipboardText() {
   try {
@@ -21,7 +20,7 @@ export function parseJson(json: string): Promise<object> {
   const tryEval = (str: any) => eval(`const a = ${str}; a`);
 
   try {
-    return Promise.resolve(humps.camelizeKeys(JSON.parse(json)));
+    return Promise.resolve( JSON.parse(json));
   } catch (ignored) {}
 
   try {

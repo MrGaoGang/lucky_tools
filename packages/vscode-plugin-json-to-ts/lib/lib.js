@@ -27,7 +27,6 @@ var vscode_1 = require("vscode");
 var copyPaste = __importStar(require("copy-paste"));
 var lodash_1 = __importDefault(require("lodash"));
 var fs_1 = __importDefault(require("fs"));
-var humps = require('humps');
 function getClipboardText() {
     try {
         return Promise.resolve(copyPaste.paste());
@@ -44,7 +43,7 @@ exports.handleError = handleError;
 function parseJson(json) {
     var tryEval = function (str) { return eval("const a = " + str + "; a"); };
     try {
-        return Promise.resolve(humps.camelizeKeys(JSON.parse(json)));
+        return Promise.resolve(JSON.parse(json));
     }
     catch (ignored) { }
     try {
