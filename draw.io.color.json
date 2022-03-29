@@ -11,6 +11,11 @@
   "customColorSchemes": [
     [
       {
+        "fill": "#42B681",
+        "stroke": "none",
+        "font": "#ffffff"
+      },
+      {
         "fill": "#034FD8",
         "stroke": "none",
         "font": "#ffffff"
@@ -94,6 +99,11 @@
       },
       {
         "fill": "#f19b97",
+        "stroke": "none",
+        "font": "#ffffff"
+      },
+      {
+        "fill": "#A9C4EB",
         "stroke": "none",
         "font": "#ffffff"
       }
