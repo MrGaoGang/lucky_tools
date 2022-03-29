@@ -31,7 +31,8 @@ var json_to_ts_1 = __importDefault(require("json-to-ts"));
 var lib_1 = require("./lib");
 function activate(context) {
     context.subscriptions.push(vscode_1.commands.registerCommand("jsonToTs.fromSelection", transformFromSelection));
-    context.subscriptions.push(vscode_1.commands.registerCommand("jsonToTs.fromClipboard", transformFromClipboard));
+    context.subscriptions.push(vscode_1.commands.registerCommand("jsonToTs.fromClipboard", transformFromClipboard.bind(vscode_1.window, true)));
+    context.subscriptions.push(vscode_1.commands.registerCommand("jsonToTs.fromClipboardNormal", transformFromClipboard));
     context.subscriptions.push(vscode_1.commands.registerCommand("jsonToTs.fromJSONFile", transformFromJSONFile));
 }
 exports.activate = activate;
@@ -71,10 +72,11 @@ function transformFromJSONFile() {
     })
         .catch(lib_1.handleError);
 }
-function transformFromClipboard() {
+function transformFromClipboard(humps) {
+    if (humps === void 0) { humps = false; }
     lib_1.getClipboardText()
         .then(lib_1.validateLength)
-        .then(lib_1.parseJson)
+        .then(function (res) { return lib_1.parseJson(res, humps); })
         .then(function (json) {
         return json_to_ts_1.default(json).reduce(function (a, b) { return a + "\n\n" + b; });
     })

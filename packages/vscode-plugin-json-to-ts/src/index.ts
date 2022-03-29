@@ -19,7 +19,16 @@ export function activate(context: ExtensionContext) {
     commands.registerCommand("jsonToTs.fromSelection", transformFromSelection)
   );
   context.subscriptions.push(
-    commands.registerCommand("jsonToTs.fromClipboard", transformFromClipboard)
+    commands.registerCommand(
+      "jsonToTs.fromClipboard",
+      transformFromClipboard.bind(window,true)
+    )
+  );
+  context.subscriptions.push(
+    commands.registerCommand(
+      "jsonToTs.fromClipboardNormal",
+      transformFromClipboard
+    )
   );
   context.subscriptions.push(
     commands.registerCommand("jsonToTs.fromJSONFile", transformFromJSONFile)
@@ -48,7 +57,10 @@ function transformFromSelection() {
 function transformFromJSONFile() {
   const activeFile = window.activeTextEditor?.document.fileName;
   const filePath = activeFile?.substring(0, activeFile?.lastIndexOf("/"));
-  const tmpFilePath = path.join(filePath?filePath:os.tmpdir(), "json-to-ts.ts");
+  const tmpFilePath = path.join(
+    filePath ? filePath : os.tmpdir(),
+    "json-to-ts.ts"
+  );
   const tmpFileUri = Uri.file(tmpFilePath);
   getSelectedFile()
     .then(parseJson)
@@ -64,10 +76,10 @@ function transformFromJSONFile() {
     .catch(handleError);
 }
 
-function transformFromClipboard() {
+function transformFromClipboard(humps = false) {
   getClipboardText()
     .then(validateLength)
-    .then(parseJson)
+    .then((res) => parseJson(res, humps))
     .then((json) => {
       return JsonToTS(json).reduce((a, b) => `${a}\n\n${b}`);
     })

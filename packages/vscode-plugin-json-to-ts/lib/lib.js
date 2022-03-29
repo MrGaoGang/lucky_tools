@@ -26,6 +26,7 @@ exports.validateLength = exports.getSelectedFile = exports.getSelectedText = exp
 var vscode_1 = require("vscode");
 var copyPaste = __importStar(require("copy-paste"));
 var lodash_1 = __importDefault(require("lodash"));
+var humps_1 = require("humps");
 var fs_1 = __importDefault(require("fs"));
 function getClipboardText() {
     try {
@@ -40,10 +41,11 @@ function handleError(error) {
     vscode_1.window.showErrorMessage(error.message);
 }
 exports.handleError = handleError;
-function parseJson(json) {
+function parseJson(json, humps) {
+    if (humps === void 0) { humps = false; }
     var tryEval = function (str) { return eval("const a = " + str + "; a"); };
     try {
-        return Promise.resolve(JSON.parse(json));
+        return Promise.resolve(humps === true ? humps_1.camelizeKeys(JSON.parse(json)) : JSON.parse(json));
     }
     catch (ignored) { }
     try {
@@ -83,7 +85,7 @@ exports.getSelectedText = getSelectedText;
 function getSelectedFile() {
     var document = vscode_1.window.activeTextEditor.document;
     if (lodash_1.default.endsWith(document.fileName, "json")) {
-        return Promise.resolve(fs_1.default.readFileSync(document.fileName, 'utf8').toString());
+        return Promise.resolve(fs_1.default.readFileSync(document.fileName, "utf8").toString());
     }
     return Promise.resolve("");
 }

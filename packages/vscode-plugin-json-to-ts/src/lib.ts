@@ -1,8 +1,9 @@
-import { ViewColumn, window,Range,Position } from "vscode";
+import { ViewColumn, window, Range, Position } from "vscode";
 import * as os from "os";
 import * as copyPaste from "copy-paste";
 import _ from "lodash";
-import fs from 'fs'
+import { camelizeKeys } from "humps";
+import fs from "fs";
 
 export function getClipboardText() {
   try {
@@ -16,11 +17,12 @@ export function handleError(error: Error) {
   window.showErrorMessage(error.message);
 }
 
-export function parseJson(json: string): Promise<object> {  
+export function parseJson(json: string, humps = false): Promise<object> {
   const tryEval = (str: any) => eval(`const a = ${str}; a`);
-
   try {
-    return Promise.resolve( JSON.parse(json));
+    return Promise.resolve(
+      humps === true ? camelizeKeys(JSON.parse(json)) : JSON.parse(json)
+    );
   } catch (ignored) {}
 
   try {
@@ -61,8 +63,10 @@ export function getSelectedText(): Promise<string> {
 
 export function getSelectedFile(): Promise<string> {
   const { document } = window.activeTextEditor!;
-  if(_.endsWith(document.fileName,"json")){
-   return Promise.resolve( fs.readFileSync(document.fileName,'utf8').toString())
+  if (_.endsWith(document.fileName, "json")) {
+    return Promise.resolve(
+      fs.readFileSync(document.fileName, "utf8").toString()
+    );
   }
   return Promise.resolve("");
 }

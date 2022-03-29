@@ -2,7 +2,7 @@
   "name": "json-2-ts",
   "displayName": "json转ts",
   "description": "Convert JSON object to typescript interfaces",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "publisher": "mrgaogang",
   "icon": "icon.png",
   "engines": {
@@ -36,8 +36,13 @@
         "category": "Cat Coding"
       },
       {
-        "command": "jsonToTs.fromClipboard",
+        "command": "jsonToTs.fromClipboardNormal",
         "title": "剪切板转换ts",
+        "category": "Cat Coding"
+      },
+      {
+        "command": "jsonToTs.fromClipboard",
+        "title": "剪切板转换ts(驼峰)",
         "category": "Cat Coding"
       },
       {
@@ -74,6 +79,11 @@
         },
         {
           "when": "editorFocus",
+          "command": "jsonToTs.fromClipboardNormal",
+          "group": "Cat Coding"
+        },
+        {
+          "when": "editorFocus",
           "command": "jsonToTs.fromJSONFile",
           "group": "Cat Coding"
         }
@@ -95,6 +105,7 @@
   },
   "devDependencies": {
     "@types/copy-paste": "^1.1.30",
+    "@types/humps": "^2.0.1",
     "@types/node": "^10.5.2",
     "@types/vscode": "^1.38.0",
     "tslint": "^5.16.0",

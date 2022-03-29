@@ -19,7 +19,7 @@
     "description": "Lucky tools Vue Component with typescript."
   },
   "Luckly Vue2 TS": {
-    "prefix": "vue2ts",
+    "prefix": "vue2ts-capi",
     "body": [
       " <template>",
       "</template>",
@@ -29,6 +29,30 @@
       "export default defineComponent({",
       " name: '${1:}',",
       " setup(props) {",
+      " return {",
+
+      " };",
+      " },",
+      "});",
+      "</script>",
+
+      "<style lang=\"less\">",
+
+      "</style>"
+    ],
+    "description": "Lucky tools Vue Component with typescript."
+  },
+  "Luckly Vue2 TS Extends": {
+    "prefix": "vue2ts-extends",
+    "body": [
+      " <template>",
+      "</template>",
+      "<script lang=\"ts\">",
+
+      "import Vue from 'vue';",
+      "export default Vue.extend({",
+      " name: '${1:}',",
+      " data() {",
       " return {",
 
       " };",
