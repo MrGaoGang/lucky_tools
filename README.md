@@ -1,4 +1,6 @@
-## lucky_tools
+## lucky_tools 
+
+欢迎大家使用
 
 [English](./en_README.md)
 
